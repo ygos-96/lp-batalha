@@ -1,0 +1,143 @@
+@media screen and (min-width: 1391px) {
+  .img-header {
+    max-width: 100%;
+    height: 600px;
+  }
+}
+@media screen and (max-width: 1390px) {
+  .img-header {
+    max-width: 100%;
+    height: 380px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .navbar-collapse {
+    background-color: #161c2d;
+    position: fixed;
+    top: 70px;
+    right: 10px;
+    width: 50%;
+    max-width: 300px;
+    z-index: 1050;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .info-header {
+    padding: 20px;
+  }
+  .info-header img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 769px) {
+  .swiper-pagination {
+    display: none;
+  }
+}
+.swiper-pagination-bullet {
+  background: #6068db;
+  border: 2px solid #90ecf4;
+}
+.swiper-pagination-bullet-active {
+  background: #90ecf4;
+  border: 2px solid #6068db;
+}
+@media (max-width: 768px) {
+  .swiper-container {
+    width: 90%;
+  }
+  .swiper-slide {
+    margin-bottom: 20px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+  .swiper-pagination {
+    display: block;
+  }
+  .section {
+    height: 100%;
+  }
+  .jurados .d-none {
+    display: block !important;
+  }
+  .jurados .d-md-flex {
+    display: none !important;
+  }
+  .footer {
+    height: 100%;
+  }
+  .footer .footer-row {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer .footer-info,
+  .footer .footer-menu-container,
+  .footer .footer-button-container {
+    width: 100%;
+  }
+  .footer .footer-info {
+    margin-bottom: 20px;
+  }
+  .footer .footer-menu {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer .footer-menu-item {
+    margin: 5px 10px;
+  }
+  .footer .footer-menu-link {
+    font-size: 14px;
+  }
+  .footer .footer-button {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .sobre-img {
+    display: none;
+  }
+  .d-none.d-md-flex {
+    display: none !important;
+  }
+  .d-md-none {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding-inline: 0px !important;
+  }
+}
+@media screen and (min-width: 501px) {
+  .cronograma .conteudo-desk {
+    display: block;
+  }
+  .cronograma .conteudo-mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cronograma .conteudo-desk {
+    display: none;
+  }
+  .cronograma .conteudo-mobile {
+    display: block;
+  }
+  .card-text {
+    font-size: 12px;
+  }
+  .time-card-wrapper {
+    flex: 0 1 100%;
+  }
+  .last-card-wrapper .card-categoria {
+    flex: 0 1 calc(100% - 16px);
+  }
+}
+@media screen and (max-width: 400px) {
+  .txt-categoria {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,30 @@
+.categorias .txt-sessao {
+  font-size: var(--size-titulo);
+  font-family: var(--font-montserrat);
+}
+.card-container {
+  gap: 16px;
+}
+.time-card-wrapper {
+  flex: 0 1 calc(50% - 16px);
+  box-sizing: border-box;
+}
+.card-categoria {
+  height: 80px;
+}
+.card-img {
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(72%);
+}
+.last-card-wrapper {
+  flex: 0 1 100%;
+}
+.last-card-wrapper .card-categoria {
+  flex: 0 1 calc(100% - 16px);
+}
+@media screen and (max-width: 500px) {
+  .time-card-wrapper {
+    flex: 0 1 100%;
+  }
+}

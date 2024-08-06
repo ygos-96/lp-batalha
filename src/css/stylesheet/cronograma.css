@@ -1,0 +1,73 @@
+.cronograma .txt-sessao {
+  font-size: var(--size-titulo);
+  font-family: var(--font-montserrat);
+}
+.dia {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 0 auto;
+}
+.horarios {
+  margin: 0 auto;
+}
+.dia h3 {
+  font-size: 14px;
+  font-family: var(--font-montserrat);
+  font-weight: 100;
+}
+a .ver-tudo {
+  color: #00d9a5;
+  font-size: 18px;
+  text-decoration: none;
+}
+.fa-arrow-right {
+  font-size: 12px;
+}
+.txt-horario {
+  font-size: 14px;
+}
+.txt-categoria {
+  font-size: 18px;
+  font-weight: 600;
+}
+.card-info {
+  line-height: 40px;
+  width: 90px;
+}
+.data-dia {
+  font-size: 55px;
+  font-weight: bold;
+  font-family: var(--font-montserrat);
+}
+.categoria-nome {
+  font-size: 16px;
+  font-family: var(--font-montserrat);
+}
+.data-mes {
+  font-size: 20px;
+  opacity: 0.3;
+}
+.categoria-hora {
+  font-size: 14px;
+  opacity: 0.3;
+}
+@media screen and (max-width: 500px) {
+  .cronograma .conteudo-desk {
+    display: none;
+  }
+  .cronograma .conteudo-mobile {
+    display: block;
+  }
+}
+@media screen and (min-width: 501px) {
+  .cronograma .conteudo-desk {
+    display: block;
+  }
+  .cronograma .conteudo-mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .txt-categoria {
+    font-size: 15px;
+  }
+}

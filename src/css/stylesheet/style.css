@@ -1,0 +1,407 @@
+body {
+  background-color: --background-body !important;
+}
+@font-face {
+  font-family: 'Cattedralle';
+  src: url('../font/Cattedrale-Demo-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.modal-content {
+  position: relative;
+  background: none;
+}
+
+.modal-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../midia/img/background/sessao-1.webp');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  filter: brightness(70%);
+  z-index: -1;
+  border-radius: 0.3rem;
+}
+
+.modal-content::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: -1;
+  border-radius: 0.3rem;
+}
+
+.modal-title {
+  font-size: 50px;
+  font-family: 'Cattedralle', sans-serif;
+}
+.close:focus,
+.close:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.cabecalho {
+  overflow: hidden;
+}
+.cabecalho::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../midia/img/background/sessao-1.webp');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  filter: brightness(30%);
+  z-index: -1;
+}
+.cabecalho::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: -1;
+}
+.btn-primary {
+  background: linear-gradient(135deg, #161c2d, #473bf0, #161c2d);
+  transition: background 0.3s ease;
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, #161c2d, #473bf0, #161c2d);
+}
+.btn:focus,
+.btn:active {
+outline: none !important;
+box-shadow: none !important;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active{
+  outline: none !important;
+  box-shadow: none !important;
+}
+.main {
+  overflow: hidden;
+}
+.main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #060713;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 0) 80%
+    ),
+    url('../midia/img/background/Layout Site_.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(80%);
+  z-index: -1;
+}
+.sobre .txt-sessao {
+  font-size: var(--size-titulo);
+  font-family: var(--font-montserrat);
+}
+.sobre-img {
+  opacity: 0.5;
+  filter: blur(5px);
+}
+.txt-sobre {
+  max-width: 700px;
+  line-height: 30px;
+}
+.como-funciona {
+  margin-bottom: 150px;
+}
+.como-funciona .txt-sessao {
+  font-size: var(--size-titulo);
+  font-family: var(--font-montserrat);
+}
+.card-sessao {
+  width: 14rem;
+  height: 280px;
+}
+.card-sessao::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #9e9e9e;
+  opacity: 0.1;
+  border-radius: 8px;
+  z-index: 1;
+}
+.card-content {
+  z-index: 2;
+}
+.title-card {
+  font-size: 14px;
+}
+.txt-card {
+  color: #ffffff;
+  opacity: 0.4;
+  font-family: var(--font-poppins);
+  font-size: 14px;
+}
+.categorias .txt-sessao {
+  font-size: var(--size-titulo);
+  font-family: var(--font-montserrat);
+}
+.card-container {
+  gap: 16px;
+}
+.time-card-wrapper {
+  flex: 0 1 calc(50% - 16px);
+  box-sizing: border-box;
+}
+.categorias .txt-sessao {
+  font-size: var(--size-titulo);
+  font-family: var(--font-montserrat);
+}
+.card-container {
+  gap: 16px;
+}
+.time-card-wrapper {
+  flex: 0 1 calc(50% - 16px);
+  box-sizing: border-box;
+}
+.card-categoria {
+  height: 100px;
+}
+.card-img {
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(72%);
+}
+.last-card-wrapper {
+  flex: 0 1 100%;
+}
+.last-card-wrapper .card-categoria {
+  flex: 0 1 calc(50% - 16px);
+}
+.cronograma .txt-sessao {
+  font-size: var(--size-titulo);
+  font-family: var(--font-montserrat);
+}
+.dia {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 0 auto;
+}
+.horarios {
+  margin: 0 auto;
+}
+.dia h3 {
+  font-size: 14px;
+  font-family: var(--font-montserrat);
+  font-weight: 100;
+}
+.fa-arrow-right {
+  font-size: 12px;
+}
+.txt-horario {
+  font-size: 14px;
+}
+.txt-categoria {
+  font-size: 18px;
+  font-weight: 600;
+}
+.card-info {
+  line-height: 40px;
+  width: 90px;
+}
+.data-dia {
+  font-size: 55px;
+  font-weight: bold;
+  font-family: var(--font-montserrat);
+}
+.categoria-nome {
+  font-size: 16px;
+  font-family: var(--font-montserrat);
+}
+.data-mes {
+  font-size: 20px;
+  opacity: 0.3;
+}
+.categoria-hora {
+  font-size: 14px;
+  opacity: 0.3;
+}
+.jurados .txt-sessao {
+  font-size: var(--size-titulo);
+  font-family: var(--font-montserrat);
+}
+.jurado-card {
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem;
+  width: 100%;
+  max-width: 13rem;
+  color: white;
+  text-align: center;
+}
+.jurado-card p:nth-child(3) {
+  color: #47ffbf;
+  font-size: 16px;
+}
+.jurado-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto;
+  object-fit: cover;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-container-jurados {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.swiper-pagination-jurados {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ganhadores {
+  overflow: hidden;
+}
+.ganhadores::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: -1;
+}
+.ganhadores .txt-sessao {
+  font-size: var(--size-titulo);
+  font-family: var(--font-montserrat);
+}
+.swiper-container {
+  width: 90%;
+  margin: 0 auto;
+}
+.swiper-slide {
+  overflow: hidden;
+}
+.swiper-slide img {
+  transition: transform 0.5s ease;
+  max-height: 70vh;
+}
+.swiper-slide img:hover {
+  transform: scale(1.1);
+}
+.swiper-slide .overlay {
+  bottom: 20px;
+  left: 10px;
+  padding: 5px 10px;
+  width: calc(100% - 20px);
+}
+.swiper-slide .overlay i {
+  color: #daa520;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.swiper-button-next {
+  right: 10px;
+}
+.swiper-button-prev {
+  left: 10px;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 30px;
+  font-weight: bold;
+}
+.footer {
+  overflow: hidden;
+  height: 30vh;
+}
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../midia/img/background/back-footer.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(20%);
+  z-index: -1;
+}
+.footer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: -1;
+}
+.footer .footer-container {
+  z-index: 1;
+}
+.footer .footer-logo {
+  margin: 0 auto 10px;
+}
+.footer .footer-info {
+  font-size: 14px;
+}
+.footer .footer-menu {
+  list-style: none;
+}
+.footer .footer-menu-item {
+  margin: 10px 15px;
+}
+.footer .footer-menu-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+.footer .footer-menu-link:hover {
+  text-decoration: underline;
+}
+.footer .footer-button {
+  display: inline-block;
+  margin-top: 10px;
+}

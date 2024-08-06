@@ -1,0 +1,42 @@
+.como-funciona {
+  margin-bottom: 150px;
+}
+.como-funciona .txt-sessao {
+  font-size: var(--size-titulo);
+  font-family: var(--font-montserrat);
+}
+
+.card-sessao {
+  width: 14rem;
+  height: 280px;
+}
+
+.card-sessao::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #9e9e9e;
+  opacity: 0.1;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+}
+
+.title-card {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.txt-card {
+  color: #ffffff;
+  opacity: 0.4;
+  font-family: var(--font-poppins);
+  font-size: 14px;
+}
